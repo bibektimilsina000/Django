@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title_block %}
+
+
+Months List
+
+
+
+
+{% endblock title_block %}
+
+
+{% block body_block %}
+
+{% include 'app/includes/header.html' %}
+
+<h1>List of Months</h1>
+   
+<ul>
+{% for month in months %}
+<h4> <a href="{% url 'appchallanges' month %}"> {{month|title}}</a></h4>
+
+
+{% endfor %}
+</ul>
+
+{% endblock body_block %}
+
+
+
+
+
+
+
+
+
+ 

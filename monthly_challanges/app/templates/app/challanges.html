@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+{% block title_block %}
+
+
+My Challanges
+
+
+{% endblock title_block %}
+
+{% block body_block %}
+
+{% include 'app/includes/header.html' %}
+
+{% if challange is not None  %}
+<h1>Challanges  of  {{month|title}}</h1>
+<h3> {{challange|title}}</h3>
+{% else %}
+<h3>This month  has no challanges</h3>
+{% endif %}
+
+
+
+
+
+
+{% endblock body_block %}
+
+
+
+
+
+
+
+
+
+ 
