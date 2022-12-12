@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
 def  startingPage(request):
-    print('Starting page')
+    return render(request,'blog/index.html')
 
 def post(request):
-    print('Post Page')
+    pass
 
 def postDetail(request,slug):
-     print("Post Detail")
+     pass
